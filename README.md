@@ -1,5 +1,9 @@
-Hi TAFFAZZEL,
+# Hi TAFFAZZEL,
+
 This is my FizzBuzz
-compile with javac FizzBuzz.java
-Thanks
+
+Compile with javac FizzBuzz.java
+
+Thanks,
+
 D
