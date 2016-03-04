@@ -17,12 +17,34 @@ public class iFizzBuzz {
 		continue;
 	    }
 
+<<<<<<< HEAD
 	    if(n <= 0) {
 		reject();
 		s.nextLine();
 		continue;
 	    }
 	    
+=======
+	    int n;
+	    Scanner s = new Scanner(System.in);
+	    try {
+	    n = s.nextInt();
+	    }
+	    catch(Exception InputMismatchException) {
+		reject();
+		continue;
+	    }
+
+	    if(n < 0) {
+		reject();
+		continue;
+	    }
+
+	    if(n==0) {
+		System.out.println("Nice try, good testing skills. Still not a positive integer");
+		continue;
+	    }
+>>>>>>> 9245e0f4d31504af2a41ec3a5a3d0d9eecc68302
 	    System.out.println(response(n));
 	}
     }
