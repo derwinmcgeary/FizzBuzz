@@ -4,7 +4,7 @@ public class BuzzFizz {
 	    String out = new String("");
 	    if(i%3==0) out += "Fizz";
 	    if(i%5==0) out += "Buzz";
-	    if(out.length() == 0) out += Integer.toString(i);
+	    if(out.length() == 0) out += i;
 	    System.out.println(out);
 	}
 	       
