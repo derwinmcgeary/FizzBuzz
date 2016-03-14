@@ -1,16 +1,26 @@
 public class FizzBuzz {
+    int fizz;
+    int buzz;
+    
+    public FizzBuzz(int fizz, int buzz) {
+	this.fizz=fizz;
+	this.buzz=buzz;
+    }
+
+    public String respond(int number) {
+	if(number==0) return ("" + number);
+	String out = new String("");
+	if(number%fizz==0) out += "Fizz";
+	if(number%buzz==0) out += "Buzz";
+	if(out.length() == 0) out += number;
+	return out;
+
+    }
+    
     public static void main(String[] args) {
+	FizzBuzz fb = new FizzBuzz(3,5);
 	for(int i=1;i<100;i++) {
-
-	    if(i%3 == 0) System.out.printf("Fizz");
-
-	    if(i%5 == 0) System.out.printf("Buzz");
-	    // If we printed Fizz or Buzz, just add a newline
-	    if(i%3==0||i%5==0)
-		{  System.out.printf("\n"); }
-	    // Otherwise, print out the number and a newline
-	    else {System.out.printf("%d\n",i);
-	    }
+	    System.out.println(fb.respond(i));   
 	}
     }
 }
